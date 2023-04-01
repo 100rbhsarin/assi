@@ -1,0 +1,164 @@
+body{
+    background-color: rgb(99, 99, 98);
+}
+.container{
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+.big-hexagon {
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 450px;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    background-color: #f1ef68;
+    position: relative;
+    margin: 100px auto;
+  } 
+
+  .main {
+    display:flex;
+    --s: 70px;  
+    --m: 0px;    
+    --f: calc(1.732 * var(--s) + 4 * var(--m)  - 1px);
+  }
+  
+  .con {
+    font-size: 0px; 
+    border:#000;
+  }
+  
+  .con div {
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s)*1.1547); 
+    /* width:calc(var(--s)*1.1547) ; */
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(1% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 1%);
+    background: rgb(150, 148, 148);
+    margin-bottom: calc(var(--m) - var(--s)*0.2885); 
+  }
+ 
+  .con::before {
+    content: "";
+    width: calc(var(--s)/2 + var(--m));
+    float: left;
+    height: 120%;
+    shape-outside: repeating-linear-gradient(     
+                     #0000 0 calc(var(--f) - 3px),  
+                     #000  0 var(--f));
+  }
+
+  .game{
+    background-color: none;
+  }
+  
+  
+  
+  .choose-color{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    width: 400px;
+    height: 150px;
+    background-color: #393937;
+    justify-content: space-around;
+  }
+ 
+
+  .button{
+  margin-top: 10px;
+  }
+  .but1 {
+background-color: rgb(61, 237, 61);
+border: none;
+padding: 15px 32px;
+text-decoration: none;
+margin: 4px 2px;
+border-radius: 25px;
+  }
+  .but1:focus{
+    padding: 19px 36px;
+  }
+  .but2{
+    background-color: rgb(224, 94, 94);
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 25px;
+  }
+  .but2:focus{
+    padding: 19px 36px;
+  }
+
+  .but3{
+    background-color: rgb(214, 214, 61);
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 25px;
+  }
+  .but3:focus{
+    padding: 19px 36px;
+  }
+
+  .but4{
+    background-color: rgb(81, 167, 233);
+    border: none;
+    padding: 15px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 25px;
+  }
+  .but4:focus{
+    padding: 19px 36px;
+  }
+
+  
+
+  .ball-selection{
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: space-between;
+padding-left: 10px;
+padding-right: 10px;
+    width: 600px;
+    height: 150px;
+    background-color: #393937;
+
+  }
+  
+.ball{
+    margin-top: 20px;
+    width: 50px;
+    height: 40px;
+}
+
+.button-go{
+    
+        /* display: inline-block; */
+        padding: 15px 25px;
+        font-size: 24px;
+        width: 150px;
+        height: 70px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 35px;
+       
+      }
+        
+      .button-go:active {
+        background-color: #3e8e41;
+        transform: translateY(4px);
+      }
