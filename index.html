@@ -9,60 +9,19 @@
 </head>
 <body>
     
-    <div  id="game-canvas" class="big-hexagon">
-        <div class="main">
-            <div class="con">
-              <div  class="game"></div>
-              <div   class="game"></div>
-              <div  class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-              <div class="game"></div>
-             
+    <canvas  id="canvas" class="big-hexagon">
+         <div class="gamebox" id="gamebox">
+           
             </div>
-          </div>
+          
 
+</canvas>
 
-</div>
-
+  
+  
 <div class="container">
 <div id="color-menu" class="choose-color">
-<h3>Colour Seletion</h3>
+<h3>Colour Selection</h3>
 <div id="color-buttons" class="button">
 <button  id='1' onclick="color(this)"  class="but1"></button>
 <button  id='2' onclick="color(this)" class="but2"></button>
@@ -76,20 +35,20 @@
 
     <h3>Ball Selection</h3>
     <div class="ball-img">
-    <img  class="ball" src="./img/1200px-Tennis_ball.svg.png" alt="">
+    <img id="ball1" onclick="selectBall('ball1')" class="ball" src="./img/1200px-Tennis_ball.svg.png" alt="">
     <p>Tannis</p>
 </div>
 <div class="ball-img">
-    <img class="ball" src="./img/37965.png" alt="">
+    <img id="ball2" onclick="selectBall('ball2')" class="ball" src="./img/37965.png" alt="">
     <p>Squash</p>
 </div>
 <div class="ball-img">
-    <img class="ball" src="./img/Super-Ball-PNG-Image.png" alt="">
+    <img id="ball3" onclick="selectBall('ball3')" class="ball" src="./img/Super-Ball-PNG-Image.png" alt="">
     <p>Super</p>
 </div>
 </div>
-<button  class="button-go">GO</button>
-</div>
+<button  id="ok-button" class="button-go">GO</button>
+<!-- </div> -->
 
    
 
