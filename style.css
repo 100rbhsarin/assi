@@ -8,26 +8,14 @@ body{
   border: 1px solid black;
   display: flex;
   align-items: center;
-  /* clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%); */
-  /* background-color: #d1d14c; */
-  /* position: relative; */
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  background-color: #d1d14c;
+  position: relative;
   margin: 100px;
-  /* overflow: hidden */
+  overflow: hidden
   
 }
 
- .big-hexagon {
-    /* display: flex;
-    align-items: center;
-    width: 420px;
-    height: 430px;
-    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-    background-color: #d1d14c;
-    position: relative;
-    margin: 100px auto;
-    overflow: hidden; */
-    
-}    
 
  
 .gamebox{
@@ -43,7 +31,7 @@ body{
 
   .square{
     background-color: rgb(130, 134, 130);
-    box-shadow: 0 0 2px rgb(24, 133, 191);
+    box-shadow: 0 0 2px rgb(12, 12, 12);
     width: 26px;
     height: 36px;
     /* clip-path: polygon(1% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 1%); */
